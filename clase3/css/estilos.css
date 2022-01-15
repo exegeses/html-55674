@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+body{
+    font-family: Nunito, sans-serif;
+    color: #707070;
+    font-size: 20px;
+    font-weight: 300;
+}
+header{
+    height: 60px;
+}
+nav{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+}
+    nav a{   
+        text-decoration: none;
+        color: #707070;
+        height: 60px;
+        line-height: 60px; /* centrar texto en vertical */
+        /*padding-left:20px;
+        padding-right: 20px;*/
+        width: 110px;
+        text-align: center;
+    }
+main{
+    width: 900px;
+    margin: auto;
+}    
+    #hero{
+        height: 370px;
+        display: flex;
+        /*flex-wrap: wrap; /* respeta tamaños de elementos (agrandó la imagen) */
+        align-content: center;
+    }
+    #hero img{
+        /* las medidas originales para que no deforme la imagen */
+        width: 369px;
+        height: 300px;
+    }   
+    h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+    #marcas{
+        height: 360px;
+        display: flex;
+        /*justify-content: space-between;*/
+        justify-content: space-evenly;
+    }
+    #marcas article{
+        background-color: #C75D55;
+        width: 200px;
+        height: 200px;
+    }
