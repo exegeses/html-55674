@@ -53,7 +53,10 @@ main{
         justify-content: space-evenly;
     }
     #marcas article{
-        background-color: #C75D55;
+        /*background-color: #C75D55;*/
         width: 200px;
         height: 200px;
+    }
+    #marcas h2{
+        font-size: 18px;
     }
