@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+body{
+    font-family: Nunito, sans-serif;
+    color: #707070;
+    font-size: 20px;
+    font-weight: 300;
+}
+header{
+    height: 60px;
+}
+    header nav{
+        width: 900px;
+        margin: auto;
+        display: flex;
+        justify-content: right;
+    }
+        nav a{   
+            text-decoration: none;
+            color: #707070;
+            height: 60px;
+            line-height: 60px; /* centrar texto en vertical */
+            /*padding-left:20px;
+            padding-right: 20px;*/
+            width: 110px;
+            text-align: center;
+        }
+main{
+    width: 900px;
+    margin: auto;
+}    
+    #hero{
+        height: 370px;
+        display: flex;
+        /*flex-wrap: wrap; /* respeta tamaños de elementos (agrandó la imagen) */
+        align-content: center;
+    }
+    #hero img{
+        /* las medidas originales para que no deforme la imagen */
+        width: 369px;
+        height: 300px;
+    }   
+    h1{
+        font-size: 40px;
+        font-weight: 300;
+    }
+    #marcas{
+        height: 360px;
+        display: flex;
+        /*justify-content: space-between;*/
+        justify-content: space-evenly;
+    }
+    #marcas article{
+        /*background-color: #C75D55;*/
+        text-align: center;
+        width: 200px;
+        height: 200px;
+    }
+    #marcas h2{
+        font-size: 18px;
+    }
+    #marcas p{
+        font-size: 16px;
+        text-align: justify;
+    }
+footer{
+    width: 900px;
+    margin: auto;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+    footer nav{
+        
+    }
+        footer nav a{
+            font-size: 16px;
+            margin-right: 8px;
+        }
+    footer #social{
+        margin-right: 90px;
+    }
+    footer #social a{
+        margin: 10px;
+        text-decoration: none;
+    }
+        footer #social img{
+            width: 32px;
+            opacity: .5;
+        }
+        footer #social img:hover{
+            opacity: 1;
+        }
