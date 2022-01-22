@@ -30,6 +30,7 @@ header{
 main{
     width: 900px;
     margin: auto;
+    padding: 30px 0px; /* separacion hacia dentro */
 }    
     #hero{
         height: 370px;
@@ -65,6 +66,28 @@ main{
         font-size: 16px;
         text-align: justify;
     }
+    main .cliente{
+        width: 830px;
+        margin: 20px auto; /* vert  horiz */
+        /* para poner contenido uno al lado del otro */
+        display: flex; /* para poner contenido uno al lado del otro */
+        height: 226px;
+    }
+        .cliente .logo{
+            width: 280px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            height: 226px;
+        }
+        .cliente .txt-cliente{
+            width: 550px;
+            height: 226px;
+            background-color: rgb(255, 208, 208);
+        }
+
+
 footer{
     width: 900px;
     margin: auto;
