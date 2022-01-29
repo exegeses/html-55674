@@ -59,7 +59,7 @@ main{
         width: 200px;
         height: 200px;
     }
-    #marcas h2{
+    h2{
         font-size: 18px;
     }
     #marcas p{
@@ -84,9 +84,51 @@ main{
         .cliente .txt-cliente{
             width: 550px;
             height: 226px;
-            background-color: rgb(255, 208, 208);
+           /* background-color: rgb(255, 208, 208); */
+            font-size: 16px;
+            text-align: justify;
         }
 
+        #contenido-contacto{
+            display: flex;
+            justify-content: space-around;
+        }
+            .contacto{
+                width: 410px;
+                height: 310px;
+            }
+        /* formulario */
+            .contacto form{
+                padding: 0px 30px 0px 30px; /**separación dentro de la caja */
+            }
+
+            input, textarea{
+                width: 340px;
+                padding: 8px;
+                margin-bottom: 15px;
+                background-color: #ffc0a6;
+                color: #763915;
+                border: 1px solid #f57b42;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+            textarea{
+                height: 75px;
+                resize: none;
+            }
+            button{
+                background-color: #1d0c00;
+                color: #f8b6a2;
+                width: 150px;
+                padding: 8px;
+                border: 1px solid #2d1b11;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+            button:hover{
+                background-color: #3c1600;
+                color: #fec83a;
+            }
 
 footer{
     width: 900px;
