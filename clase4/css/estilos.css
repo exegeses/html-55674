@@ -11,6 +11,12 @@ body{
 header{
     height: 60px;
 }
+    #top{
+        width: 900px;
+        margin: auto; /* centrado */
+        display: flex; /* para poner el logo y el nav uno a l aldo del otro */
+        /* align-items: center; cebtrar en vertical */
+    }
     header nav{
         width: 900px;
         margin: auto;

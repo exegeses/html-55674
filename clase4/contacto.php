@@ -29,18 +29,32 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5884.996581770456!2d-0.13462930217761024!3d51.5089325357189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sOjo%20de%20Londres!5e0!3m2!1ses!2sar!4v1643465790463!5m2!1ses!2sar" width="410" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="contacto">
-                <form action="contacto.php" method="post">
-                    Nombre:
-                    <input type="text" name="nombre">
-                    <br>
-                    Email:
-                    <input type="email" name="email">
-                    <br>
-                    Consultas
-                    <textarea name="consultas"></textarea>
-                    <br>
-                    <button>Enviar</button>
-                </form>
+    <!-- respuesta del formulario -->
+    <?php
+        //capturamos datos enviados popr el form
+        $nombre = $_POST['nombre'];
+        $email = $_POST['email'];
+        $consultas = $_POST['consultas'];
+
+        //configuramos datos de email a enviar
+        $destinatario = 'goku@email.com';
+        $asunto = 'Email enviado desde mi sitio';
+        $cuerpo = '<div style="width:500px; padding:20px; font-family:verdana; background-color:#d5d5d5">';
+        $cuerpo .= 'Nombre: '.$nombre. '<br>';
+        $cuerpo .= 'Email: '.$email. '<br>';
+        $cuerpo .= 'Consultas: '.$consultas;
+        $cuerpo .= '</div>';
+
+        $headers = 'MIME-Version: 1.0 ';
+        $headers .= 'Content-Type: text/plain; charset=utf-8' . "\r\n";
+
+        //enviamos email
+        mail($destinatario, $asunto, $cuerpo, $headers );
+
+        //imprimimos mensaje personalizado
+        echo 'Gracias '.$nombre. ' por contactarnos';
+    ?>
+
             </div>
         </section>
     </main>
